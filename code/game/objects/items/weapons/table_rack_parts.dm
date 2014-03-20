@@ -79,3 +79,19 @@
 	user.drop_item()
 	del(src)
 	return
+
+//Bench parts
+
+/obj/item/weapon/bench_parts/attack_self(mob/user as mob)
+	var/obj/structure/stool/bench/R = new /obj/structure/stool/bench( user.loc )
+	R.add_fingerprint(user)
+	user.drop_item()
+	del(src)
+	return
+
+/obj/item/weapon/bench_parts/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	if (istype(W, /obj/item/weapon/wrench))
+		new /obj/item/stack/sheet/metal( user.loc )
+		del(src)
+		return
+	return

@@ -348,6 +348,16 @@
 	flags = FPRINT | TABLEPASS| CONDUCT
 	attack_verb = list("slammed", "bashed", "battered", "bludgeoned", "thrashed", "whacked")
 
+/obj/item/weapon/bench_parts
+	name = "bench parts"
+	desc = "Parts of a bench."
+	gender = PLURAL
+	icon = 'icons/obj/items.dmi'
+	icon_state = "table_parts"
+	m_amt = 3750
+	flags = FPRINT | TABLEPASS| CONDUCT
+	attack_verb = list("slammed", "bashed", "battered", "bludgeoned", "thrashed", "whacked")
+
 /obj/item/weapon/table_parts/reinforced
 	name = "reinforced table parts"
 	desc = "Hard table parts. Well...harder..."
