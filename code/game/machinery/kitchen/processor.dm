@@ -144,10 +144,12 @@
 		user.visible_message("\blue [user] turns on \a [src].", \
 			"You turn on \a [src].", \
 			"You hear a food processor")
+			icon_state = "processor1"
 		playsound(src.loc, 'sound/machines/blender.ogg', 50, 1)
 		use_power(500)
 		sleep(P.time)
 		P.process(src.loc, O)
+		icon_state = "processor"
 		src.processing = 0
 	src.visible_message("\blue \the [src] finished processing.", \
 		"You hear food processor stops")
