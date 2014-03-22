@@ -303,10 +303,26 @@
 		icon_state = "hair_e"
 		gender = MALE // turnoff!
 
+	shorty
+		name = "Shorty Cut"
+		icon_state = "hair_shorty"
+		gender = FEMALE
+
+	halfface
+		name = "Half Face"
+		icon_state = "hair_halfface"
+		gender = FEMALE
+
+	gelside
+		name = "Gelled side"
+		icon_state = "hair_gelside"
+		gender = MALE
 
 	bald
 		name = "Bald"
 		icon_state = "bald"
+
+
 /*
 ///////////////////////////////////
 /  =---------------------------=  /
