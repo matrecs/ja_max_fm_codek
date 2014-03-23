@@ -12,6 +12,8 @@
 		icon_state = "[((x + y) ^ ~(x * y) + z) % 25]"
 		if(src.z == 1)
 			icon_state = "sh[((x + y) ^ ~(x * y) + z) % 25]"
+		if(src.z == 7)
+			icon_state = "sh[((x + y) ^ ~(x * y) + z) % 25]"
 
 /turf/space/attack_paw(mob/user as mob)
 	return src.attack_hand(user)
