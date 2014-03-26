@@ -1856,3 +1856,16 @@ datum/design/cart_captain
 	materials = list("$metal" = 50, "$glass" = 50)
 	build_path = "/obj/item/weapon/cartridge/captain"
 	locked = 1
+
+/////////////////////////
+//   Gradonite Stuff   //
+/////////////////////////
+datum/design/gradonite_charger
+	name = "Gradonite charger"
+	desc = "A small pulsing device for gradonite activating"
+	id = "gradonite_charger"
+	req_tech = list("engineering"=2, "gradonite" = 2)
+	build_type = PROTOLATHE
+	materials = list("$metal" = 150, "$glass" = 50)
+	build_path = "/obj/item/weapon/gradonite_charger"
+

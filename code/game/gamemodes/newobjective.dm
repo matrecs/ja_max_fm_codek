@@ -1189,8 +1189,8 @@ datum
 					return 20
 
 			cash	//must be in credits - atm and coins don't count
-				var/steal_amount = 2000
-				explanation_text = "Beg, borrow or steal 2000 credits."
+				var/steal_amount = 5000
+				explanation_text = "Beg, borrow or steal 5000 credits."
 				weight = 20
 
 				New(var/text,var/joba)
@@ -1199,7 +1199,7 @@ datum
 					explanation_text = "Beg, borrow or steal [steal_amount] credits."
 
 				get_points(var/job)
-					return 10 + 25 * round(steal_amount / 5000)
+					return 10 + 25 * round(steal_amount / 10000)
 
 				check_completion()
 					var/held_credits = 0

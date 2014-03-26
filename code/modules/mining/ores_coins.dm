@@ -54,6 +54,12 @@
 	icon_state = "Clown ore"
 	origin_tech = "materials=4"
 
+/obj/item/weapon/ore/gradonite
+	name = "Gradonite ore"
+	icon_state = "Gradonite ore"
+	origin_tech = "materials=5"
+	desc = "Pulsing with unstable power"
+
 /obj/item/weapon/ore/slag
 	name = "Slag"
 	desc = "Completely useless"
@@ -117,6 +123,11 @@
 /obj/item/weapon/coin/adamantine
 	name = "Adamantine coin"
 	icon_state = "coin_adamantine"
+
+/obj/item/weapon/coin/gradonite
+	name = "Gradonite coin"
+	icon_state = "coin_adamantine"
+	desc = "Not sure to use this"
 
 /obj/item/weapon/coin/mythril
 	name = "Mythril coin"

@@ -11,6 +11,22 @@
  * 		Crowbar
  */
 
+
+obj/item/weapon/gradonite_charger
+	name = "Gradonite charger"
+	desc = "A small pulsing device. Don't touch it's tip."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "charger"
+	flags = FPRINT | TABLEPASS| CONDUCT
+	slot_flags = SLOT_BELT
+	force = 10.0
+	throwforce = 4.0
+	w_class = 2.0
+	m_amt = 150
+	origin_tech = "materials=2;engineering=1;gradonite=2"
+	attack_verb = list("pulsed", "bashed", "bludgeoned", "whacked")
+
+
 /*
  * Wrench
  */

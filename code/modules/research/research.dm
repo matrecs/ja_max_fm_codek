@@ -228,6 +228,11 @@ datum/tech/syndicate
 	desc = "The study of technologies that violate standard Nanotrasen regulations."
 	id = "syndicate"
 
+datum/tech/gradonite
+	name = "Gradonite Research"
+	desc = "The development of new ways of gradonite refining and using"
+	id = "gradonite"
+
 /*
 datum/tech/arcane
 	name = "Arcane Research"

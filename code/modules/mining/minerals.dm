@@ -70,3 +70,9 @@ mineral/clown
 	result_amount = 3
 	spread = 0
 	ore = /obj/item/weapon/ore/clown
+
+mineral/gradonite
+	name = "Gradonite"
+	result_amount = 5
+	spread_chance = 10
+	ore = /obj/item/weapon/ore/gradonite

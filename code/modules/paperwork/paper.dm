@@ -273,7 +273,7 @@
 		if((!in_range(src, usr) && loc != usr && !( istype(loc, /obj/item/weapon/clipboard) ) && loc.loc != usr && usr.get_active_hand() != i)) // Some check to see if he's allowed to write
 			return
 
-//		t = checkhtml(t)
+		t = checkhtml(t)
 
 		// check for exploits
 		for(var/bad in paper_blacklist)

@@ -166,6 +166,31 @@ var/global/list/datum/stack_recipe/gold_recipes = list ( \
 	..()
 
 /*
+ * Gradonite
+ */
+/obj/item/stack/sheet/mineral/gradonite
+	name = "gradonite"
+	icon_state = "sheet-gradonite"
+	force = 5.0
+	throwforce = 5
+	w_class = 3.0
+	throw_speed = 3
+	throw_range = 3
+	origin_tech = "materials=5;gradonite=1"
+	perunit = 2000
+	sheettype = "gradonite"
+
+var/global/list/datum/stack_recipe/gradonite_recipes = list ( \
+	new/datum/stack_recipe("Gradonite crystal", /obj/structure/gradonite_crystal, 10, one_per_turf = 1, on_floor = 1), \
+	)
+
+/obj/item/stack/sheet/mineral/gradonite/New(var/loc, var/amount=null)
+	recipes = gradonite_recipes
+	pixel_x = rand(0,4)-4
+	pixel_y = rand(0,4)-4
+	..()
+
+/*
  * Silver
  */
 /obj/item/stack/sheet/mineral/silver
