@@ -1,6 +1,22 @@
 Hello? ok. it's work! welcome to another one branch of SS13 code. MRF-Atlantis. glad to see you here.
 
 
+перепил карты идет своим чередом.
+Добавлены:
+-РнД
+-мед бэй
+-карго
+-мостик
+В процессе:
+-бриг
+-дормы
+Еще предстоит сделать:
+-инженерка
+-ядро ии
+
+Кроме того:
+-добавлен градонит
+
 
 # baystation12
 
