@@ -70,7 +70,7 @@ obj/structure/gradonite_crystal/attackby(var/obj/O as obj, var/mob/user as mob)
 				new /obj/item/weapon/gradonite/blue(src.loc)
 			if (gradonite_type == "green")
 				new /obj/item/weapon/gradonite/green(src.loc)
-		Del(src)
+		del(src)
 		return
 
 
