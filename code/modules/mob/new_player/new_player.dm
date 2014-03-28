@@ -16,6 +16,13 @@
 	anchored = 1	//  don't get pushed around
 
 	New()
+
+		var/blahblahblah = 1
+		if (blahblahblah == 0)         //TODO: Подгрузка из БД.
+			log_access("Not in WL: [key_name(src.client)]")
+			src.client << "\red You are not whitelisted."
+			del(src.client)
+
 		mob_list += src
 
 	verb/new_player_panel()
