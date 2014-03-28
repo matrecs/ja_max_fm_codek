@@ -1,10 +1,11 @@
 var/CMinutes = null
 var/savefile/Banlist
-
+var/savefile/WL
 
 /proc/CheckBan(var/ckey, var/id, var/address)
 	if(!Banlist)		// if Banlist cannot be located for some reason
 		LoadBans()		// try to load the bans
+		LoadWL()
 		if(!Banlist)	// uh oh, can't find bans!
 			return 0	// ABORT ABORT ABORT
 
@@ -61,6 +62,9 @@ var/savefile/Banlist
 /hook/startup/proc/loadBans()
 	return LoadBans()
 
+/hook/startup/proc/loadWL()
+	return LoadWL()
+
 /proc/LoadBans()
 
 	Banlist = new("data/banlist.bdb")
@@ -76,6 +80,22 @@ var/savefile/Banlist
 		Banlist.cd = "/base"
 
 	ClearTempbans()
+	return 1
+
+/proc/LoadWL()
+
+	WL = new("data/WL.bdb")
+	log_admin("Loading WhiteList")
+
+	if (!length(Banlist.dir)) log_admin("Whitelist is empty.")
+
+	if (!Banlist.dir.Find("base"))
+		log_admin("Whitelist missing base dir.")
+		WL.dir.Add("base")
+		WL.cd = "/base"
+	else if (Banlist.dir.Find("base"))
+		WL.cd = "/base"
+
 	return 1
 
 /proc/ClearTempbans()
