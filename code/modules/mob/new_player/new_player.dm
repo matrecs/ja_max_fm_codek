@@ -20,8 +20,10 @@
 		var/blahblahblah = 1
 		if (blahblahblah == 0)         //TODO: Подгрузка из БД.
 			log_access("Not in WL: [key_name(src.client)]")
-			src.client << "\red You are not whitelisted."
+			src.client << "\red You are not whitelisted. Contact administrator or go to http://vk.com/projectheretic"
 			del(src.client)
+			src.key = null
+			src.ckey = null
 
 		mob_list += src
 
