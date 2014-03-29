@@ -21,6 +21,7 @@
 	var/antagHUD = 0
 	universal_speak = 1
 	var/atom/movable/following = null
+
 /mob/dead/observer/New(mob/body)
 	sight |= SEE_TURFS | SEE_MOBS | SEE_OBJS | SEE_SELF
 	see_invisible = SEE_INVISIBLE_OBSERVER
@@ -65,6 +66,7 @@
 	if(!name)							//To prevent nameless ghosts
 		name = capitalize(pick(first_names_male)) + " " + capitalize(pick(last_names))
 	real_name = name
+	color = "black"
 	..()
 
 
