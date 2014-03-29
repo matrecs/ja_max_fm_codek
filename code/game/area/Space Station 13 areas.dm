@@ -1719,6 +1719,16 @@ var/list/ghostteleportlocs = list()
 	icon_state = "away"
 	requires_power = 0
 
+/area/snowplanet
+	name = "\improper Snow Wasteland"
+	luminosity = 1
+
+/area/snowplanet/bunker
+/area/snowplanet/medpost
+/area/snowplanet/medposttoilets
+/area/snowplanet/civil
+/area/snowplanet/rnd
+
 /area/awaymission/beach
 	name = "Beach"
 	icon_state = "null"

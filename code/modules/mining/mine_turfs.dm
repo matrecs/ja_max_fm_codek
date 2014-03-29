@@ -397,6 +397,14 @@ var/list/artifact_spawn = list() // Runtime fix for geometry loading before cont
 	var/proper_name = name
 	..()
 	name = proper_name
+	if (src.z == 8)
+		oxygen = MOLES_O2STANDARD
+		nitrogen = MOLES_N2STANDARD
+		temperature = T20C
+	if (src.z == 9)
+		oxygen = MOLES_O2STANDARD
+		nitrogen = MOLES_N2STANDARD
+		temperature = 246+T0C
 	//if (prob(50))
 	//	seedName = pick(list("1","2","3","4"))
 	//	seedAmt = rand(1,4)
