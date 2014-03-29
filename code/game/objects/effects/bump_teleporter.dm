@@ -32,3 +32,44 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 		if(BT.id == src.id_target)
 			usr.loc = BT.loc	//Teleport to location with correct id.
 			return
+
+/obj/effect/sidebumber
+	icon = 'icons/effects/tile_effects.dmi'
+	icon_state = "arrow"
+	invisibility = 101
+	anchored = 1
+	density = 1
+	opacity = 0
+
+/obj/effect/sidebumber/HasEntered(atom/movable/M as mob|obj)
+	if (src.dir == 1)
+		M.y -= 1
+	if (src.dir == 2)
+		M.y += 1
+	if (src.dir == 4)
+		M.x += 1
+	if (src.dir == 8)
+		M.x -= 1
+	if (src.dir == 5)
+		M.y -= 1
+		M.x += 1
+	if (src.dir == 6)
+		M.y += 1
+		M.x += 1
+	if (src.dir == 9)
+		M.y -= 1
+		M.x -= 1
+	if (src.dir == 10)
+		M.y += 1
+		M.x -= 1
+
+/obj/effect/throwaway
+	icon = 'icons/effects/tile_effects.dmi'
+	icon_state = "teleport"
+	invisibility = 101
+	anchored = 1
+	density = 1
+	opacity = 0
+
+/obj/effect/throwaway/HasEntered(atom/movable/M as mob|obj)
+	M.z = 6
