@@ -38,7 +38,7 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 	icon_state = "arrow"
 	invisibility = 101
 	anchored = 1
-	density = 1
+	density = 0
 	opacity = 0
 
 /obj/effect/sidebumber/HasEntered(atom/movable/M as mob|obj)
@@ -68,7 +68,7 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 	icon_state = "teleport"
 	invisibility = 101
 	anchored = 1
-	density = 1
+	density = 0
 	opacity = 0
 
 /obj/effect/throwaway/HasEntered(atom/movable/M as mob|obj)
