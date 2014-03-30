@@ -42,26 +42,28 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 	opacity = 0
 
 /obj/effect/sidebumber/HasEntered(atom/movable/M as mob|obj)
+	var/oldx = M.x
+	var/oldy = M.y
 	if (src.dir == 1)
-		M.y -= 1
+		M.y = oldy - 1
 	if (src.dir == 2)
-		M.y += 1
+		M.y = oldy + 1
 	if (src.dir == 4)
-		M.x += 1
+		M.x = oldx + 1
 	if (src.dir == 8)
-		M.x -= 1
+		M.x = oldx - 1
 	if (src.dir == 5)
-		M.y -= 1
-		M.x += 1
+		M.y = oldy - 1
+		M.x = oldx + 1
 	if (src.dir == 6)
-		M.y += 1
-		M.x += 1
+		M.y = oldy + 1
+		M.x = oldx + 1
 	if (src.dir == 9)
-		M.y -= 1
-		M.x -= 1
+		M.y = oldy - 1
+		M.x = oldx - 1
 	if (src.dir == 10)
-		M.y += 1
-		M.x -= 1
+		M.y = oldy + 1
+		M.x = oldx - 1
 
 /obj/effect/throwaway
 	icon = 'icons/effects/tile_effects.dmi'
