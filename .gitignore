@@ -1,4 +1,4 @@
-#ignore misc BYOND files
+#ignore files
 *.log
 *.int
 *.rsc
