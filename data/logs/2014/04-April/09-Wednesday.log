@@ -1,0 +1,168 @@
+
+
+Starting up. 00:25.22
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[00:25:33]ADMIN: Loading jobban_rank
+[00:25:33]ADMIN: jobban_keylist was empty
+[00:25:33]ADMIN: Loading Banlist
+[00:25:33]ADMIN: Loading WhiteList
+[00:25:33]ADMIN: Whitelist is empty.
+[00:25:33]ADMIN: Whitelist missing base dir.
+[00:26:47]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[00:27:06]ADMIN: Kef has started the game.
+[00:27:06]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[00:27:07]ACCESS: Logout: *no key*/(Kef)
+[00:27:07]ACCESS: Login: Kef/(Davion Altmann) from 127.0.0.1-1136684253 || BYOND v503
+[00:27:13]DEBUG: Next event in 28 minutes.
+[00:31:28]SAY: space bear/ : Rawr!
+[00:31:30]ACCESS: Logout: *no key*/(Davion Altmann)
+[00:31:30]ACCESS: Login: Kef/(Davion Altmann) from 127.0.0.1-1136684253 || BYOND v503
+[00:31:42]ADMIN: Kef/(Davion Altmann) teleported @Kef/(Davion Altmann)
+[00:31:42]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Davion Altmann) teleported @Kef (DC)/(Davion Altmann)</span></span>
+[00:31:45]ADMIN: Kef/(Davion Altmann) teleported @Kef/(Davion Altmann)
+[00:31:45]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Davion Altmann) teleported @Kef (DC)/(Davion Altmann)</span></span>
+[00:31:46]ACCESS: Logout: *no key*/(Davion Altmann)
+[00:31:46]ACCESS: Login: Kef/(Davion Altmann) from 127.0.0.1-1136684253 || BYOND v503
+[00:31:53]EMOTE: Davion Altmann/Kef : <B>Davion Altmann</B> gasps!
+[00:31:54]ADMIN: Kef/(Davion Altmann) spawned /obj/item/device/flashlight at (124,198,1)
+[00:32:17]EMOTE: Davion Altmann/Kef : <B>Davion Altmann</B> gasps!
+[00:32:21]ADMIN: Kef/(Davion Altmann) has toggled Kef/(Davion Altmann)'s nodamage to On
+[00:32:21]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Davion Altmann) has toggled <a href='?priv_msg=[0x5000000]'>Kef</a>/(Davion Altmann)'s nodamage to On</span></span>
+[00:34:30]ACCESS: Logout: Kef/(Davion Altmann)
+[00:34:30]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: Kef/(Davion Altmann)</span></span>
+
+
+Starting up. 00:57.49
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[00:57:59]ADMIN: Loading jobban_rank
+[00:57:59]ADMIN: jobban_keylist was empty
+[00:57:59]ADMIN: Loading Banlist
+[00:57:59]ADMIN: Loading WhiteList
+[00:57:59]ADMIN: Whitelist is empty.
+[00:57:59]ADMIN: Whitelist missing base dir.
+[01:01:27]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[01:02:03]ADMIN: Kef has started the game.
+[01:02:03]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[01:02:14]DEBUG: Next event in 41.978 minutes.
+[01:02:14]ACCESS: Logout: *no key*/(Kef)
+[01:02:14]ACCESS: Login: Kef/(Giggles) from 127.0.0.1-1136684253 || BYOND v503
+[01:02:25]ADMIN: Kef/(Giggles) jumped to the Bridge
+[01:02:25]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Giggles) jumped to the Bridge</span></span>
+[01:02:34]ADMIN: Kef/(Giggles) spawned /obj/item/device/flashlight at (127,218,1)
+[01:02:57]ADMIN: Kef/(Giggles) has toggled Kef/(Giggles)'s nodamage to On
+[01:02:57]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Giggles) has toggled <a href='?priv_msg=[0x5000000]'>Kef</a>/(Giggles)'s nodamage to On</span></span>
+[01:03:08]ADMIN: Kef/(Giggles) spawned /obj/item/device/flashlight at (126,212,1)
+[01:03:15]ACCESS: Logout: *no key*/(Giggles)
+[01:03:15]ACCESS: Login: Kef/(Giggles) from 127.0.0.1-1136684253 || BYOND v503
+[01:03:18]ADMIN: Kef/(Giggles) teleported @Kef/(Giggles)
+[01:03:18]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Giggles) teleported @Kef (DC)/(Giggles)</span></span>
+[01:03:19]ACCESS: Logout: *no key*/(Giggles)
+[01:03:19]ACCESS: Login: Kef/(Giggles) from 127.0.0.1-1136684253 || BYOND v503
+[01:03:33]SAY: Commander Clucky/ : Cluck!
+[01:03:41]ADMIN: Kef/(Giggles) spawned /obj/item/weapon/beach_ball at (124,195,1)
+[01:05:57]SAY: Commander Clucky/ : BWAAAAARK BWAK BWAK BWAK!
+[01:06:50]SAY: Commander Clucky/ : Bwaak bwak.
+[01:08:25]SAY: space bear/ : GRR!
+[01:08:39]SAY: Betsy/ : Moo?
+[01:09:57]SAY: space bear/ : GRR!
+[01:11:15]SAY: Commander Clucky/ : BWAAAAARK BWAK BWAK BWAK!
+[01:11:40]SAY: chicken/ : BWAAAAARK BWAK BWAK BWAK!
+[01:12:19]SAY: space bear/ : Rawr!
+[01:13:26]SAY: space bear/ : GRR!
+[01:15:39]SAY: Runtime/ : Purr!
+[01:16:13]SAY: Commander Clucky/ : BWAAAAARK BWAK BWAK BWAK!
+[01:18:03]SAY: space bear/ : Rawr!
+[01:18:23]SAY: Commander Clucky/ : Cluck!
+[01:19:16]SAY: space bear/ : Rawr!
+[01:20:04]SAY: Betsy/ : MOOOOOO
+[01:21:48]ACCESS: Logout: Kef/(Giggles)
+[01:21:48]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: Kef/(Giggles)</span></span>
+
+
+Starting up. 01:58.41
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[01:58:51]ADMIN: Loading jobban_rank
+[01:58:51]ADMIN: jobban_keylist was empty
+[01:58:51]ADMIN: Loading Banlist
+[01:58:51]ADMIN: Loading WhiteList
+[01:58:51]ADMIN: Whitelist is empty.
+[01:58:51]ADMIN: Whitelist missing base dir.
+[02:00:02]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[02:03:08]ACCESS: Logout: *no key*/(Kef)
+[02:03:08]ACCESS: Login: Kef/(Dillon Stocker) from 127.0.0.1-1136684253 || BYOND v503
+[02:03:14]DEBUG: Next event in 28.566 minutes.
+[02:03:28]ADMIN: Kef/(Dillon Stocker) spawned /obj/item/device/flashlight at (125,216,1)
+[02:03:31]ADMIN: Kef/(Dillon Stocker) spawned /obj/item/device/flashlight at (125,216,1)
+[02:03:57]ADMIN: Kef/(Dillon Stocker) has toggled Kef/(Dillon Stocker)'s nodamage to On
+[02:03:57]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Dillon Stocker) has toggled <a href='?priv_msg=[0x5000000]'>Kef</a>/(Dillon Stocker)'s nodamage to On</span></span>
+[02:04:15]ACCESS: Logout: *no key*/(Dillon Stocker)
+[02:04:15]ACCESS: Login: Kef/(Dillon Stocker) from 127.0.0.1-1136684253 || BYOND v503
+[02:04:19]ADMIN: Kef/(Dillon Stocker) teleported @Kef/(Dillon Stocker)
+[02:04:19]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Dillon Stocker) teleported @Kef (DC)/(Dillon Stocker)</span></span>
+[02:04:20]ACCESS: Logout: *no key*/(Dillon Stocker)
+[02:04:20]ACCESS: Login: Kef/(Dillon Stocker) from 127.0.0.1-1136684253 || BYOND v503
+[02:05:43]ACCESS: Logout: Kef/(Dillon Stocker)
+[02:05:43]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: Kef/(Dillon Stocker)</span></span>

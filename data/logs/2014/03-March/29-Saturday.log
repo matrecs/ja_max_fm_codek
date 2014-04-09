@@ -1,0 +1,167 @@
+
+
+Starting up. 06:34.41
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Saved mode is 'secret'
+Failed to connect to database in load_admins(). Reverting to legacy system.
+Database connection failed. Reverting to the legacy ban system.
+Failed to load config/mods.txt
+
+
+
+Starting up. 06:46.00
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'secret'
+[06:46:11]ADMIN: Loading jobban_rank
+[06:46:11]ADMIN: jobban_keylist was empty
+[06:46:11]ADMIN: Loading Banlist
+[06:46:11]ADMIN: Loading WhiteList
+[06:46:11]ADMIN: Whitelist is empty.
+[06:46:11]ADMIN: Whitelist missing base dir.
+[06:46:17]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[06:47:22]ADMIN: Kef has started the game.
+[06:47:22]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[06:47:33]ADMIN: Kef/(Kef) set the mode as extended.
+[06:47:33]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Kef) set the mode as extended.</span></span>
+[06:47:39]ADMIN: Kef has started the game.
+[06:47:39]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[06:47:40]ACCESS: Logout: *no key*/(Kef)
+[06:47:40]ACCESS: Login: Kef/(Whitaker Woodworth) from 127.0.0.1-1136684253 || BYOND v503
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> closely watches the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> stares angrily at the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> closely watches the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[06:47:43]EMOTE: space bear/ : <B>The space bear</B> closely watches the pine tree
+[06:47:45]DEBUG: Next event in 45.926 minutes.
+[06:47:51]EMOTE: space bear/ : <B>The space bear</B> prepares to attack the pine tree
+[06:48:01]ADMIN: Kef/(Whitaker Woodworth) spawned /obj/item/device/flashlight at (125,211,1)
+[06:48:10]ADMIN: Kef/(Whitaker Woodworth) spawned /obj/item/device/flashlight at (125,211,1)
+[06:48:55]ACCESS: Logout: *no key*/(Whitaker Woodworth)
+[06:48:55]ACCESS: Login: Kef/(Whitaker Woodworth) from 127.0.0.1-1136684253 || BYOND v503
+[06:50:06]ACCESS: Logout: *no key*/(Whitaker Woodworth)
+[06:50:06]ACCESS: Login: Kef/(Whitaker Woodworth) from 127.0.0.1-1136684253 || BYOND v503
+[06:50:38]ADMIN: Kef/(Whitaker Woodworth) spawned /obj/machinery/power/apc at (126,211,1)
+[06:51:08]SAY: Betsy/ : MOOOOOO
+[06:51:11]ADMIN: Kef/(Whitaker Woodworth) spawned /obj/item/device/multitool at (120,211,1)
+[06:51:35]SAY: Commander Clucky/ : Cluck!
+[06:51:41]ACCESS: Logout: Kef/(Whitaker Woodworth)
+[06:51:41]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: Kef/(Whitaker Woodworth)</span></span>
+
+
+Starting up. 20:03.01
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[20:03:12]ADMIN: Loading jobban_rank
+[20:03:12]ADMIN: jobban_keylist was empty
+[20:03:12]ADMIN: Loading Banlist
+[20:03:12]ADMIN: Loading WhiteList
+[20:03:12]ADMIN: Whitelist is empty.
+[20:03:12]ADMIN: Whitelist missing base dir.
+[20:04:02]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[20:05:58]ADMIN: Kef has started the game.
+[20:05:58]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[20:05:58]ACCESS: Logout: *no key*/(Kef)
+[20:05:58]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:06:01]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[20:06:01]EMOTE: space bear/ : <B>The space bear</B> stares angrily at the pine tree
+[20:06:02]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[20:06:02]EMOTE: space bear/ : <B>The space bear</B> growls at the pine tree
+[20:06:02]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[20:06:02]EMOTE: space bear/ : <B>The space bear</B> growls at the pine tree
+[20:06:02]EMOTE: space bear/ : <B>The space bear</B> stares alertly at the pine tree
+[20:06:02]EMOTE: space bear/ : <B>The space bear</B> closely watches the pine tree
+[20:06:03]DEBUG: Next event in 27.018 minutes.
+[20:06:09]EMOTE: space bear/ : <B>The space bear</B> prepares to attack the pine tree
+[20:06:13]ADMIN: Kef/(Edgar Sanders) spawned /obj/machinery/power/apc at (132,211,1)
+[20:06:41]ADMIN: Kef/(Edgar Sanders) modified Bridge APC's invisibility to 60
+[20:06:41]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) modified Bridge APC's invisibility to 60</span></span>
+[20:06:48]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:06:48]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:06:57]ADMIN: Kef/(Edgar Sanders) spawned /obj/machinery/power/apc at (122,204,1)
+[20:08:13]ADMIN: Kef/(Edgar Sanders) spawned /obj/machinery/power/apc at (106,171,1)
+[20:08:23]ADMIN: Kef/(Edgar Sanders) spawned /obj/machinery/power/apc at (111,183,1)
+[20:09:39]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:09:39]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:09:49]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:09:49]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:09:55]ADMIN: Kef/(Edgar Sanders) deleted Firelock East at (126,206,1)
+[20:09:55]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) deleted Firelock East at (126,206,1)</span></span>
+[20:10:04]ADMIN: Kef/(Edgar Sanders) deleted Firelock East at (124,206,1)
+[20:10:04]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) deleted Firelock East at (124,206,1)</span></span>
+[20:10:06]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:10:06]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:10:49]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:10:49]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:11:08]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:11:08]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:11:14]ADMIN: Kef/(Edgar Sanders) jumped to 129,217,1 in Space
+[20:11:14]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) jumped to 129,217,1 in Space</span></span>
+[20:11:37]SAY: Commander Clucky/ : BWAAAAARK BWAK BWAK BWAK!
+[20:11:48]ADMIN: Kef/(Edgar Sanders) jumped to 126,212,1 in the Bridge
+[20:11:48]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) jumped to 126,212,1 in the Bridge</span></span>
+[20:11:50]ACCESS: Logout: *no key*/(Edgar Sanders)
+[20:11:50]ACCESS: Login: Kef/(Edgar Sanders) from 127.0.0.1-1136684253 || BYOND v503
+[20:12:16]ADMIN: Kef/(Edgar Sanders) modified Edgar Sanders's z to 9
+[20:12:16]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) modified Edgar Sanders's z to 9</span></span>
+[20:12:21]ADMIN: Kef/(Edgar Sanders) modified Edgar Sanders's z to 8
+[20:12:21]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Edgar Sanders) modified Edgar Sanders's z to 8</span></span>
+[20:15:51]ACCESS: Logout: Kef/(Edgar Sanders)
+[20:15:51]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: Kef/(Edgar Sanders)</span></span>

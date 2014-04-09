@@ -1,0 +1,18 @@
+######################################################################
+# Basically, ckey goes first. Rank goes after the "-"                #
+# Case is not important for ckey.                                    #
+# Case IS important for the rank. However punctuation/spaces are not #
+# Ranks can be anything defined in admin_ranks.txt           ~Carn   #
+######################################################################
+
+Skandalist - Game_Master
+Mrfrenzy - Game_Master
+Salyaris - Game_Master
+GoogleCat - Game_Master
+SigilCal - Game_Master
+Kef - Game_Master
+Nestfor - Game_Master
+Yumichin - Game_Admin
+Horse4Horse - Game_Admin
+Difilex - Game_Admin
+LordSpring - Game_Admin

@@ -1,0 +1,168 @@
+
+
+Starting up. 23:05.45
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[23:05:56]ADMIN: Loading jobban_rank
+[23:05:56]ADMIN: jobban_keylist was empty
+[23:05:56]ADMIN: Loading Banlist
+[23:05:56]ADMIN: Loading WhiteList
+[23:05:56]ADMIN: Whitelist is empty.
+[23:05:56]ADMIN: Whitelist missing base dir.
+[23:06:26]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[23:08:59]ADMIN: Kef has started the game.
+[23:08:59]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[23:08:59]ACCESS: Logout: *no key*/(Kef)
+[23:08:59]ACCESS: Login: Kef/(Diego Hincken) from 127.0.0.1-1136684253 || BYOND v503
+[23:09:05]DEBUG: Next event in 41.908 minutes.
+[23:09:14]ADMIN: Kef/(Diego Hincken) spawned /obj/machinery/power/apc at (129,215,1)
+[23:09:25]ACCESS: Logout: *no key*/(Diego Hincken)
+[23:09:25]ACCESS: Login: Kef/(Diego Hincken) from 127.0.0.1-1136684253 || BYOND v503
+[23:10:26]ACCESS: Logout: *no key*/(Diego Hincken)
+[23:10:26]ACCESS: Login: Kef/(Diego Hincken) from 127.0.0.1-1136684253 || BYOND v503
+[23:10:31]ADMIN: Kef/(Diego Hincken) jumped to 125,221,1 in Space
+[23:10:31]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Diego Hincken) jumped to 125,221,1 in Space</span></span>
+[23:10:31]SAY: space bear/ : RAWR!
+[23:10:39]SAY: space bear/ : Rawr!
+[23:10:45]SAY: Betsy/ : MOOOOOO
+[23:10:57]ACCESS: Logout: *no key*/(Diego Hincken)
+[23:10:57]ACCESS: Login: Kef/(Diego Hincken) from 127.0.0.1-1136684253 || BYOND v503
+[23:10:57]SAY: Commander Clucky/ : Bwaak bwak.
+[23:11:26]ACCESS: Logout: *no key*/(Diego Hincken)
+[23:11:26]ACCESS: Login: Kef/(Diego Hincken) from 127.0.0.1-1136684253 || BYOND v503
+[23:11:35]SAY: chicken/ : Cluck!
+[23:11:46]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[23:11:58]SAY: Commander Clucky/ : Cluck!
+[23:12:05]ADMIN: Kef/(Kef) jumped to the Bridge
+[23:12:05]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Kef) jumped to the Bridge</span></span>
+[23:12:19]ADMIN: Kef/(Kef) teleported Kef/(Kef)
+[23:12:19]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Kef) teleported <a href='?priv_msg=[0x5000000]'>Kef</a>/(Kef)</span></span>
+[23:12:42]ADMIN: Kef/(Kef) spawned /mob/living/carbon/human at (116,205,1)
+[23:12:50]ACCESS: Logout: *no key*/(Kef)
+[23:12:50]ACCESS: Login: Kef/(unknown) from 127.0.0.1-1136684253 || BYOND v503
+[23:12:50]ADMIN: Kef/(unknown) modified unknown's ckey to kef
+[23:12:50]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(unknown) modified unknown's ckey to kef</span></span>
+[23:12:55]ACCESS: Logout: *no key*/(unknown)
+[23:12:55]ACCESS: Login: Kef/(unknown) from 127.0.0.1-1136684253 || BYOND v503
+[23:13:05]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">kef creating an admin explosion at the Bridge.</span></span>
+[23:13:05]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Explosion with size (1, 2, 3) in area Bridge (126,218,1) (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=126;Y=218;Z=1'>JMP</a>)</span></span>
+[23:13:05]GAME: Explosion with size (1, 2, 3) in area Bridge 
+[23:13:05]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Explosion dublicated at Bridge (126,218,7)(<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=126;Y=218;Z=7'>JMP</a>)</span></span>
+[23:13:19]EMOTE: Diego Hincken/ : <B>Diego Hincken</B> gasps!
+[23:13:25]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(unknown) jumped to coordinates 126, 218, 7</span></span>
+[23:13:35]EMOTE: Diego Hincken/ : <B>Diego Hincken</B> gasps!
+[23:13:43]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">kef creating an admin explosion at the Bridge.</span></span>
+[23:13:43]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Explosion with size (3, 5, 7) in area Bridge (127,218,7) (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=127;Y=218;Z=7'>JMP</a>)</span></span>
+[23:13:43]GAME: Explosion with size (3, 5, 7) in area Bridge 
+[23:13:43]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Explosion dublicated at Bridge (127,218,1)(<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=127;Y=218;Z=1'>JMP</a>)</span></span>
+[23:13:55]EMOTE: Diego Hincken/ : <B>Diego Hincken</B> gasps!
+[23:14:06]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(unknown) jumped to coordinates 127, 218, 1</span></span>
+[23:14:19]EMOTE: Diego Hincken/ : <B>Diego Hincken</B> seizes up and falls limp, his eyes dead and lifeless...
+[23:14:35]ADMIN: Kef/(unknown) modified unknown's z to 3
+[23:14:35]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(unknown) modified unknown's z to 3</span></span>
+[23:15:03]ADMIN: Kef/(unknown) spawned /mob/living/carbon/human at (187,223,3)
+[23:15:16]ACCESS: Logout: *no key*/(unknown)
+[23:15:16]ACCESS: Login: kef/(unknown) from 127.0.0.1-1136684253 || BYOND v503
+[23:15:16]ADMIN: Kef/(unknown) modified unknown's ckey to kef
+[23:15:16]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(unknown) modified unknown's ckey to kef</span></span>
+[23:15:44]EMOTE: unknown/kef : <B>The unknown</B> gasps for air!
+[23:16:01]ACCESS: Logout: *no key*/(unknown)
+[23:16:01]ACCESS: Login: kef/(unknown) from 127.0.0.1-1136684253 || BYOND v503
+[23:16:05]EMOTE: unknown/@Kef : <B>The unknown</B> coughs up blood!
+[23:16:13]EMOTE: unknown/@Kef : <B>The unknown</B> gasps for air!
+[23:16:37]EMOTE: unknown/@Kef : <B>The unknown</B> gasps for air!
+[23:16:45]EMOTE: unknown/@Kef : <B>The unknown</B> gasps!
+[23:16:49]ACCESS: Logout: *no key*/(unknown)
+[23:16:49]ACCESS: Login: kef/(unknown) from 127.0.0.1-1136684253 || BYOND v503
+[23:16:51]EMOTE: unknown/kef : <B>The unknown</B> gasps!
+[23:16:53]ADMIN: kef/(unknown) jumped to 76,180,6 in Space
+[23:16:53]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>kef</a>/(unknown) jumped to 76,180,6 in Space</span></span>
+[23:17:05]ACCESS: Logout: kef/(unknown)
+[23:17:05]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: kef/(unknown)</span></span>
+
+
+Starting up. 23:52.28
+---------------------
+Adding game mode AutoTraitor (extend-a-traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode heist (heist) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode ninja (ninja) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Adding game mode monkey (monkey) to configuration.
+Unknown game mode probability configuration definition: alien.
+Unknown game mode probability configuration definition: blob.
+Unknown game mode probability configuration definition: sandbox.
+Unknown game mode probability configuration definition: epidemic.
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[23:52:38]ADMIN: Loading jobban_rank
+[23:52:38]ADMIN: jobban_keylist was empty
+[23:52:38]ADMIN: Loading Banlist
+[23:52:38]ADMIN: Loading WhiteList
+[23:52:38]ADMIN: Whitelist is empty.
+[23:52:38]ADMIN: Whitelist missing base dir.
+[23:55:07]ACCESS: Login: Kef/(Kef) from 127.0.0.1-1136684253 || BYOND v503
+[23:56:30]ADMIN: Kef has started the game.
+[23:56:30]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><font color='blue'>Kef has started the game.</font></span></span>
+[23:56:30]ACCESS: Logout: *no key*/(Kef)
+[23:56:31]ACCESS: Login: Kef/(Griffin Pratt) from 127.0.0.1-1136684253 || BYOND v503
+[23:56:35]DEBUG: Next event in 47.95 minutes.
+[23:56:52]ADMIN: Kef/(Griffin Pratt) spawned /obj/item/clothing/glasses/thermal at (125,215,1)
+[23:57:21]ADMIN: Kef/(Griffin Pratt) spawned /obj/item/device/flashlight at (125,215,1)
+[23:57:43]ADMIN: Kef/(Griffin Pratt) spawned /obj/item/clothing/head/helmet/space/rig/elite at (125,214,1)
+[23:58:00]ADMIN: Kef/(Griffin Pratt) spawned /obj/item/clothing/suit/space/rig/elite at (125,214,1)
+[23:58:06]SAY: chicken/ : Cluck!
+[23:58:08]SAY: chicken/ : Cluck!
+[23:58:14]ADMIN: Kef/(Griffin Pratt) has toggled Kef/(Griffin Pratt)'s nodamage to On
+[23:58:14]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Griffin Pratt) has toggled <a href='?priv_msg=[0x5000000]'>Kef</a>/(Griffin Pratt)'s nodamage to On</span></span>
+[00:00:19]EMOTE: space bear/ : <B>The space bear</B> stares alertly at Strong Hivebot
+[00:00:19]EMOTE: space bear/ : <B>The space bear</B> growls at Strong Hivebot
+[00:00:41]SAY: chicken/ : BWAAAAARK BWAK BWAK BWAK!
+[00:01:08]SAY: Betsy/ : Moo
+[00:02:28]SAY: Commander Clucky/ : Cluck!
+[00:02:56]SAY: Betsy/ : Moo
+[00:03:17]SAY: chicken/ : BWAAAAARK BWAK BWAK BWAK!
+[00:03:23]SAY: Commander Clucky/ : Cluck!
+[00:03:58]SAY: space bear/ : Rawr!
+[00:04:20]SAY: space bear/ : RAWR!
+[00:04:25]ACCESS: Logout: *no key*/(Griffin Pratt)
+[00:04:25]ACCESS: Login: Kef/(Griffin Pratt) from 127.0.0.1-1136684253 || BYOND v503
+[00:04:37]ADMIN: Kef/(Griffin Pratt) modified Griffin Pratt's see_invisible to 101
+[00:04:37]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Griffin Pratt) modified Griffin Pratt's see_invisible to 101</span></span>
+[00:04:41]ADMIN: Kef/(Griffin Pratt) modified Griffin Pratt's see_invisible to 200
+[00:04:41]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message"><a href='?priv_msg=[0x5000000]'>Kef</a>/(Griffin Pratt) modified Griffin Pratt's see_invisible to 200</span></span>
+[00:04:46]SAY: chicken/ : Bwaak bwak.
+[00:05:07]ADMIN: Kef/(Griffin Pratt) spawned /obj/effect/landmark/start at (125,196,1)
+[00:05:20]ADMIN: Kef/(Griffin Pratt) spawned /obj/structure/stairs/main at (123,195,1)
+[00:06:50]SAY: space bear/ : Growl!
+[00:08:42]ACCESS: Logout: Kef/(Griffin Pratt)
+[00:08:42]ADMINWARN: <span class="admin"><span class="prefix">ADMIN LOG:</span> <span class="message">Admin logout: Kef/(Griffin Pratt)</span></span>
