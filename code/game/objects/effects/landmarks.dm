@@ -5,6 +5,10 @@
 	anchored = 1.0
 	unacidable = 1
 
+obj/effect/landmark/dancestorepicentertrigger
+	name = "Dancestor Explosion"
+	invisibility = 101
+
 /obj/effect/landmark/New()
 
 	..()

@@ -6,7 +6,6 @@
 	if(dx>=dy)	return dx + (0.5*dy)	//The longest side add half the shortest side approximates the hypotenuse
 	else		return dy + (0.5*dx)
 
-
 proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impact_range, flash_range, adminlog = 1)
 	src = null	//so we don't abort once src is deleted
 	spawn(0)
@@ -16,12 +15,25 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 			return
 
 		var/start = world.timeofday
+
 		epicenter = get_turf(epicenter)
+
+		var/obj/effect/landmark/dancestorepicentertrigger/DT = new /obj/effect/landmark/dancestorepicentertrigger(epicenter)
+
+		if(epicenter.z == 1)
+			DT.z = 7
+		if(epicenter.z == 7)
+			DT.z = 1
 		if(!epicenter) return
 
+		var/turf/dancestorepicenter = get_turf(DT)
+		del(DT)
 
 		playsound(epicenter, 'sound/effects/explosionfar.ogg', 100, 1, round(devastation_range*2,1) )
 		playsound(epicenter, "explosion", 100, 1, round(devastation_range,1) )
+		if (epicenter.z == 7 || epicenter.z == 1)
+			playsound(dancestorepicenter, 'sound/effects/explosionfar.ogg', 100, 1, round(devastation_range*2,1) )
+			playsound(dancestorepicenter, "explosion", 100, 1, round(devastation_range,1) )
 
 		var/close = range(world.view+round(devastation_range,1), epicenter)
 		// to all distanced mobs play a different sound
@@ -29,9 +41,17 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 			// check if the mob can hear
 			if(M.ear_deaf <= 0 || !M.ear_deaf) if(!istype(M.loc,/turf/space))
 				M << 'sound/effects/explosionfar.ogg'
+
+		if (epicenter.z == 7 || epicenter.z == 1)
+			for(var/mob/M in world) if(M.z == dancestorepicenter.z) if(!(M in close))
+				if(M.ear_deaf <= 0 || !M.ear_deaf) if(!istype(M.loc,/turf/space))
+					M << 'sound/effects/explosionfar.ogg'
+
 		if(adminlog)
 			message_admins("Explosion with size ([devastation_range], [heavy_impact_range], [light_impact_range]) in area [epicenter.loc.name] ([epicenter.x],[epicenter.y],[epicenter.z]) (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[epicenter.x];Y=[epicenter.y];Z=[epicenter.z]'>JMP</a>)")
 			log_game("Explosion with size ([devastation_range], [heavy_impact_range], [light_impact_range]) in area [epicenter.loc.name] ")
+			if (epicenter.z == 7 || epicenter.z == 1)
+				message_admins("Explosion dublicated at [dancestorepicenter.loc.name] ([dancestorepicenter.x],[dancestorepicenter.y],[dancestorepicenter.z])(<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[dancestorepicenter.x];Y=[dancestorepicenter.y];Z=[dancestorepicenter.z]'>JMP</a>)")
 
 		var/lighting_controller_was_processing = lighting_controller.processing	//Pause the lighting updates for a bit
 		lighting_controller.processing = 0
@@ -43,10 +63,16 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 			var/datum/effect/system/explosion/E = new/datum/effect/system/explosion()
 			E.set_up(epicenter)
 			E.start()
+			if (epicenter.z == 7 || epicenter.z == 1)
+				var/datum/effect/system/explosion/R = new/datum/effect/system/explosion()
+				R.set_up(dancestorepicenter)
+				R.start()
 
 		var/x0 = epicenter.x
 		var/y0 = epicenter.y
 		var/z0 = epicenter.z
+
+		var/zsec = dancestorepicenter.z
 
 		for(var/turf/T in range(epicenter, max(devastation_range, heavy_impact_range, light_impact_range)))
 			var/dist = cheap_pythag(T.x - x0,T.y - y0)
@@ -62,6 +88,22 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 					var/atom/movable/AM = atom_movable
 					if(AM)	AM.ex_act(dist)
 
+		if (epicenter.z == 7 || epicenter.z == 1)
+			for(var/turf/T in range(dancestorepicenter, max(devastation_range, heavy_impact_range, light_impact_range)))
+				var/dist = cheap_pythag(T.x - x0,T.y - y0)
+
+				if(dist < devastation_range)		dist = 1
+				else if(dist < heavy_impact_range)	dist = 2
+				else if(dist < light_impact_range)	dist = 3
+				else								continue
+
+				T.ex_act(dist)
+				if(T)
+					for(var/atom_movable in T.contents)	//bypass type checking since only atom/movable can be contained by turfs anyway
+						var/atom/movable/AM = atom_movable
+						if(AM)	AM.ex_act(dist)
+
+
 		var/took = (world.timeofday-start)/10
 		//You need to press the DebugGame verb to see these now....they were getting annoying and we've collected a fair bit of data. Just -test- changes  to explosion code using this please so we can compare
 		if(Debug2)	world.log << "## DEBUG: Explosion([x0],[y0],[z0])(d[devastation_range],h[heavy_impact_range],l[light_impact_range]): Took [took] seconds."
@@ -71,6 +113,8 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 			var/obj/machinery/doppler_array/Array = doppler_arrays[i]
 			if(Array)
 				Array.sense_explosion(x0,y0,z0,devastation_range,heavy_impact_range,light_impact_range,took)
+				if (z0 == 7 || z0 == 1)
+					Array.sense_explosion(x0,y0,zsec,devastation_range,heavy_impact_range,light_impact_range,took)
 
 		sleep(8)
 
@@ -86,3 +130,16 @@ proc/explosion(turf/epicenter, devastation_range, heavy_impact_range, light_impa
 proc/secondaryexplosion(turf/epicenter, range)
 	for(var/turf/tile in range(range, epicenter))
 		tile.ex_act(2)
+	if (epicenter.z == 7 || epicenter.z == 1)
+
+		var/obj/effect/landmark/dancestorepicentertrigger/DT = new /obj/effect/landmark/dancestorepicentertrigger(epicenter)
+		if(epicenter.z == 1)
+			DT.z = 7
+		if(epicenter.z == 7)
+			DT.z = 1
+		if(!epicenter) return
+		var/turf/secepic = get_turf(DT)
+		del(DT)
+
+		for(var/turf/tile in range(range, secepic))
+			tile.ex_act(2)
