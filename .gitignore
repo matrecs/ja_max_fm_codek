@@ -1,0 +1,6 @@
+#ignore files
+*.log
+*.int
+*.rsc
+*.dmb
+*.lk
