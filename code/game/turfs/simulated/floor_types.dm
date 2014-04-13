@@ -24,7 +24,40 @@
 				update_icon()
 				name = n
 
+/turf/simulated/floor/snowpl
+	name = "snow"
+	temperature = 40+T0C
+	icon = 'icons/turf/snowpl.dmi'
+	icon_state = "1"
+	New()
+		icon_state = "[rand(1,17)]"
 
+/turf/simulated/floor/snowpl/ex_act(severity)
+	return
+
+/turf/simulated/floor/snowpl/attackby(obj/item/C as obj, mob/user as mob)
+	if (istype(C, /obj/item/stack/rods))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			return
+		var/obj/item/stack/rods/R = C
+		user << "\blue Constructing support lattice ..."
+		playsound(src.loc, 'sound/weapons/Genhit.ogg', 50, 1)
+		ReplaceWithLattice()
+		R.use(1)
+		return
+	if (istype(C, /obj/item/stack/tile/plasteel))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			var/obj/item/stack/tile/plasteel/S = C
+			del(L)
+			playsound(src.loc, 'sound/weapons/Genhit.ogg', 50, 1)
+			S.build(src)
+			S.use(1)
+			return
+		else
+			user << "\red The plating is going to need some support."
+	return
 
 /turf/simulated/floor/wood
 	name = "floor"

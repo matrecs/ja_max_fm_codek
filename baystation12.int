@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\game\objects\effects\bump_teleporter.dm
+WINDOW: code\game\objects\effects\bump_teleporter.dm;maps\spaceship.dmm;code\modules\power\cable_logic.dm;code\modules\power\power.dm;code\modules\power\cable.dm;code\game\objects\structures\stairs.dm;code\modules\mob\dead\observer\observer.dm;code\game\turfs\simulated\floor.dm;code\game\turfs\simulated\floor_types.dm;code\game\turfs\space\space.dm
 LAST_COMPILE_VERSION: 503.1224
-DIR: code code\game code\game\objects code\game\objects\effects 
-FILE: code\game\objects\effects\bump_teleporter.dm
-LAST_COMPILE_TIME: 1396997929
+DIR: code code\controllers code\game code\game\turfs code\game\turfs\simulated code\game\turfs\space code\modules code\modules\power maps 
+FILE: code\modules\power\cable.dm
+LAST_COMPILE_TIME: 1397358813
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

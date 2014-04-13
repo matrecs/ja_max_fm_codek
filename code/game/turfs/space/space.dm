@@ -14,16 +14,8 @@
 			icon_state = "sh[((x + y) ^ ~(x * y) + z) % 25]"
 		if(src.z == 7)
 			icon_state = "sh[((x + y) ^ ~(x * y) + z) % 25]"
-	if (src.z == 8)
-		oxygen = MOLES_O2STANDARD
-		nitrogen = MOLES_N2STANDARD
-		temperature = T20C
-		icon = 'icons/turf/snowpl.dmi'
-		icon_state = "[rand(1,17)]"
-	if (src.z == 9)
-		oxygen = MOLES_O2STANDARD
-		nitrogen = MOLES_N2STANDARD
-		temperature = 246+T0C
+	if(src.z == 8)
+		src.ChangeTurf(/turf/simulated/floor/snowpl)
 
 /turf/space/attack_paw(mob/user as mob)
 	return src.attack_hand(user)

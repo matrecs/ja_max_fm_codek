@@ -41,29 +41,9 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 	density = 0
 	opacity = 0
 
-/obj/effect/sidebumber/HasEntered(atom/movable/M as mob|obj)
+/obj/effect/sidebumber/Entered(atom/movable/M as mob|obj)
 	sleep(1)
-	if (M.loc == src.loc)
-		if (src.dir == 1)
-			M.y--
-		if (src.dir == 2)
-			M.y++
-		if (src.dir == 4)
-			M.x++
-		if (src.dir == 8)
-			M.x--
-		if (src.dir == 5)
-			M.y--
-			M.x++
-		if (src.dir == 6)
-			M.y++
-			M.x++
-		if (src.dir == 9)
-			M.y--
-			M.x--
-		if (src.dir == 10)
-			M.y++
-			M.x--
+	M.loc = get_step(M, src.dir)
 
 /obj/effect/throwaway
 	icon = 'icons/effects/tile_effects.dmi'
@@ -73,5 +53,5 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 	density = 0
 	opacity = 0
 
-/obj/effect/throwaway/HasEntered(atom/movable/M as mob|obj)
+/obj/effect/throwaway/Entered(atom/movable/M as mob|obj)
 	M.z = 6
