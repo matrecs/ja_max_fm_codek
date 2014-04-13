@@ -75,8 +75,9 @@
 	invisibility = 101    //невидимые для всех
 
 
-/obj/structure/stairs/main/HasEntered(atom/movable/M as mob|obj)  //триггер триггера
+/obj/structure/stairs/main/Entered(atom/movable/M as mob|obj)  //триггер триггера
 	M.loc = get_turf(exit)                     //телепорт наступившего на триггер
 	var/turf/subT = get_turf(sub)
-	for(var/atom/movable/ROI in subT)            //телепорт объекта с суб-триггера
-		ROI.loc = get_turf(subexit)
+	if (!(istype(M, /mob/dead/observer)))
+		for(var/atom/movable/ROI in subT)            //телепорт объекта с суб-триггера
+			ROI.loc = get_turf(subexit)
