@@ -9,6 +9,15 @@ obj/effect/landmark/dancestorepicentertrigger
 	name = "Dancestor Explosion"
 	invisibility = 101
 
+obj/effect/landmark/pipe_down
+	invisibility = 101
+obj/effect/landmark/pipe_up
+	invisibility = 101
+obj/effect/landmark/cable_down
+	invisibility = 101
+obj/effect/landmark/cable_up
+	invisibility = 101
+
 /obj/effect/landmark/New()
 
 	..()

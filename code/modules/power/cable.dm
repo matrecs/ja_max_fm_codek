@@ -25,9 +25,62 @@
 
 // the power cable object
 
+/////////////////////////////////////////////////////////////////
+/obj/structure/cable/z_level1
+	icon = 'icons/obj/power_cond_red.dmi'
+	New()
+		spawn(2)
+			for (var/obj/structure/cable/NC in get_step(src, src.dir))
+				NC.powernet.cables += src
+				src.powernet = NC.powernet
+			icon_state = "0-[src.dir]"
+			var/obj/effect/landmark/cable_down/CD = new /obj/effect/landmark/cable_down
+			if(!src.powernet)
+				src.powernet = new()
+				powernets += src.powernet
+				src.powernet.cables += src
+			src.mergeConnectedNetworks(dir)
+			src.mergeConnectedNetworksOnTurf()
+			CD.z = 7
+			for(var/obj/structure/cable/z_level7/CC in get_turf(CD))
+				src.powernet.cables += CC
+				CC.mergeConnectedNetworks(dir)
+				CC.mergeConnectedNetworksOnTurf()
+				merge_powernets(src.powernet,CC.powernet)
+			del(CD)
+			sleep(10)
+
+/obj/structure/cable/z_level7
+	icon = 'icons/obj/power_cond_red.dmi'
+	New()
+		spawn(2)
+			for (var/obj/structure/cable/NC in get_step(src, src.dir))
+				NC.powernet.cables += src
+				src.powernet = NC.powernet
+			icon_state = "0-[src.dir]"
+			var/obj/effect/landmark/cable_up/CU = new /obj/effect/landmark/cable_up
+			CU.z = 1
+			if(!src.powernet)
+				src.powernet = new()
+				powernets += src.powernet
+				src.powernet.cables += src
+			src.mergeConnectedNetworks(dir)
+			src.mergeConnectedNetworksOnTurf()
+			CU.z = 7
+			for(var/obj/structure/cable/z_level7/CC in get_turf(CU))
+				src.powernet.cables += CC
+				CC.mergeConnectedNetworks(dir)
+				CC.mergeConnectedNetworksOnTurf()
+				merge_powernets(src.powernet,CC.powernet)
+			del(CU)
+			sleep(10)
+/////////////////////////////////////////////////////////////////
+                                                       //Kef's powernet multi-z-levels connection
+
+
+
 /obj/structure/cable/New()
 	..()
-
 
 	// ensure d1 & d2 reflect the icon_state for entering and exiting cable
 
