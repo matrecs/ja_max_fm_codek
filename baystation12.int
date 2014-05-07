@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\game\objects\effects\bump_teleporter.dm;maps\spaceship.dmm;code\modules\power\cable_logic.dm;code\modules\power\power.dm;code\modules\power\cable.dm;code\game\objects\structures\stairs.dm;code\modules\mob\dead\observer\observer.dm;code\game\turfs\simulated\floor.dm;code\game\turfs\simulated\floor_types.dm;code\game\turfs\space\space.dm
-LAST_COMPILE_VERSION: 503.1224
-DIR: code code\controllers code\game code\game\turfs code\game\turfs\simulated code\game\turfs\space code\modules code\modules\power maps 
-FILE: code\modules\power\cable.dm
-LAST_COMPILE_TIME: 1397358813
+WINDOW: code\game\objects\effects\bump_teleporter.dm;maps\spaceship.dmm;code\modules\power\cable_logic.dm;code\modules\power\power.dm;code\modules\power\cable.dm;code\game\objects\structures\stairs.dm;code\game\mecha\mecha_parts.dm;code\game\mecha\mecha_construction_paths.dm;code\game\mecha\mecha_control_console.dm;code\game\mecha\combat\turret1.dm;code\game\mecha\mecha_parts.dm;code\game\mecha\equipment\mecha_equipment.dm;code\game\mecha\equipment\tools\unused_tools.dm
+LAST_COMPILE_VERSION: 504.1234
+DIR: code code\game code\game\mecha\combat code\game\mecha\equipment code\game\mecha\equipment\tools code\modules code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\human 
+FILE: code\game\mecha\combat\turret1.dm
+LAST_COMPILE_TIME: 1399490552
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

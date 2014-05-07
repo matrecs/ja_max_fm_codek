@@ -199,6 +199,11 @@
 	icon_state = "phazon-broken"
 
 
+/obj/effect/decal/mecha_wreckage/turret1
+	name = "turret1 wreckage"
+	icon_state = "turret1-broken"
+
+
 /obj/effect/decal/mecha_wreckage/odysseus
 	name = "Odysseus wreckage"
 	icon_state = "odysseus-broken"

@@ -330,6 +330,60 @@
 	construction_cost = list("metal"=20000,"plasma"=10000)
 	origin_tech = "materials=5;bluespace=3;magnets=3"
 
+
+////////// Turret
+
+/obj/item/mecha_parts/chassis/turret1
+	name = "Turret Chassis"
+	origin_tech = "materials=7"
+
+	New()
+		..()
+		construct = new /datum/construction/mecha/turret1_chassis(src)
+
+/obj/item/mecha_parts/part/turret1_torso
+	name="Turret Torso"
+	icon_state = "turret1_harness"
+	construction_time = 300
+	construction_cost = list("metal"=35000,"glass"=10000,"plasma"=20000)
+	origin_tech = "programming=5;materials=7;bluespace=6;powerstorage=6"
+
+/obj/item/mecha_parts/part/turret1_head
+	name="Turret Head"
+	icon_state = "turret1_head"
+	construction_time = 200
+	construction_cost = list("metal"=15000,"glass"=5000,"plasma"=10000)
+	origin_tech = "programming=4;materials=5;magnets=6"
+
+/obj/item/mecha_parts/part/turret1_left_arm
+	name="Turret Left Arm"
+	icon_state = "turret1_l_arm"
+	construction_time = 200
+	construction_cost = list("metal"=20000,"plasma"=10000)
+	origin_tech = "materials=5;bluespace=2;magnets=2"
+
+/obj/item/mecha_parts/part/turret1_right_arm
+	name="Turret Right Arm"
+	icon_state = "turret1_r_arm"
+	construction_time = 200
+	construction_cost = list("metal"=20000,"plasma"=10000)
+	origin_tech = "materials=5;bluespace=2;magnets=2"
+
+/obj/item/mecha_parts/part/turret1_left_leg
+	name="Turret Left Leg"
+	icon_state = "turret1_l_leg"
+	construction_time = 200
+	construction_cost = list("metal"=20000,"plasma"=10000)
+	origin_tech = "materials=5;bluespace=3;magnets=3"
+
+/obj/item/mecha_parts/part/turret1_right_leg
+	name="Turret Right Leg"
+	icon_state = "turret1_r_leg"
+	construction_time = 200
+	construction_cost = list("metal"=20000,"plasma"=10000)
+	origin_tech = "materials=5;bluespace=3;magnets=3"
+
+
 ///////// Odysseus
 
 

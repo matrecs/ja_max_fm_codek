@@ -1164,6 +1164,25 @@
 
 
 
+/datum/construction/mecha/turret1_chassis
+	result = "/obj/mecha/combat/turret1"
+	steps = list(list("key"=/obj/item/mecha_parts/part/turret1_torso),//1
+					 list("key"=/obj/item/mecha_parts/part/turret1_left_arm),//2
+					 list("key"=/obj/item/mecha_parts/part/turret1_right_arm),//3
+					 list("key"=/obj/item/mecha_parts/part/turret1_left_leg),//4
+					 list("key"=/obj/item/mecha_parts/part/turret1_right_leg),//5
+					 list("key"=/obj/item/mecha_parts/part/turret1_head)
+					)
+
+	custom_action(step, atom/used_atom, mob/user)
+		user.visible_message("[user] has connected [used_atom] to [holder].", "You connect [used_atom] to [holder]")
+		holder.overlays += used_atom.icon_state+"+o"
+		del used_atom
+		return 1
+
+	action(atom/used_atom,mob/user as mob)
+		return check_all_steps(used_atom,user)
+
 
 /datum/construction/mecha/odysseus_chassis
 	steps = list(list("key"=/obj/item/mecha_parts/part/odysseus_torso),//1
