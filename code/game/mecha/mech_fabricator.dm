@@ -61,6 +61,12 @@
 						/obj/item/mecha_parts/part/ripley_left_leg,
 						/obj/item/mecha_parts/part/ripley_right_leg
 					),
+	"Turret1"=list(
+					/obj/item/mecha_parts/chassis/turret1,
+					/obj/item/mecha_parts/part/turret1_torso,
+					/obj/item/mecha_parts/part/turret1_left_arm,
+					/obj/item/mecha_parts/part/turret1_right_arm
+					),
 	"Odysseus"=list(
 						/obj/item/mecha_parts/chassis/odysseus,
 						/obj/item/mecha_parts/part/odysseus_torso,

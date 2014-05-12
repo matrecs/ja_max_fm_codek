@@ -610,6 +610,24 @@ datum/design/ripley_peri
 	materials = list("$glass" = 2000, "sacid" = 20)
 	build_path = "/obj/item/weapon/circuitboard/mecha/ripley/peripherals"
 
+datum/design/turret1_main
+	name = "Circuit Design (APLU \"Turret\" Central Control module)"
+	desc = "Allows for the construction of a \"Turret\" Central Control module."
+	id = "turret1_main"
+	req_tech = list("programming" = 3)
+	build_type = IMPRINTER
+	materials = list("$glass" = 2000, "sacid" = 20)
+	build_path = "/obj/item/weapon/circuitboard/mecha/turret1/main"
+
+datum/design/turret1_peri
+	name = "Circuit Design (APLU \"Turret\" Peripherals Control module)"
+	desc = "Allows for the construction of a  \"Turret\" Peripheral Control module."
+	id = "turret1_peri"
+	req_tech = list("programming" = 3)
+	build_type = IMPRINTER
+	materials = list("$glass" = 2000, "sacid" = 20)
+	build_path = "/obj/item/weapon/circuitboard/mecha/turret1/peripherals"
+
 datum/design/odysseus_main
 	name = "Circuit Design (\"Odysseus\" Central Control module)"
 	desc = "Allows for the construction of a \"Odysseus\" Central Control module."

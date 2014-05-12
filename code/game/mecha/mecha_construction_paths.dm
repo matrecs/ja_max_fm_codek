@@ -1165,12 +1165,9 @@
 
 
 /datum/construction/mecha/turret1_chassis
-	result = "/obj/mecha/combat/turret1"
 	steps = list(list("key"=/obj/item/mecha_parts/part/turret1_torso),//1
 					 list("key"=/obj/item/mecha_parts/part/turret1_left_arm),//2
 					 list("key"=/obj/item/mecha_parts/part/turret1_right_arm),//3
-					 list("key"=/obj/item/mecha_parts/part/turret1_left_leg),//4
-					 list("key"=/obj/item/mecha_parts/part/turret1_right_leg),//5
 					 list("key"=/obj/item/mecha_parts/part/turret1_head)
 					)
 
@@ -1182,6 +1179,234 @@
 
 	action(atom/used_atom,mob/user as mob)
 		return check_all_steps(used_atom,user)
+
+	spawn_result()
+		var/obj/item/mecha_parts/chassis/const_holder = holder
+		const_holder.construct = new /datum/construction/reversible/mecha/turret1(const_holder)
+		const_holder.icon = 'icons/mecha/mech_construction.dmi'
+		const_holder.icon_state = "turret10"
+		const_holder.density = 1
+		spawn()
+			del src
+		return
+
+/datum/construction/reversible/mecha/turret1
+	result = "/obj/mecha/combat/turret1"
+	steps = list(
+					//1
+					list("key"=/obj/item/weapon/weldingtool,
+							"backkey"=/obj/item/weapon/wrench,
+							"desc"="External armor is wrenched."),
+					 //2
+					 list("key"=/obj/item/weapon/wrench,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="External armor is installed."),
+					 //3
+					 list("key"=/obj/item/stack/sheet/metal,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="Advanced capacitor is secured"),
+					 //4
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="Advanced capacitor is installed"),
+					 //5
+					 list("key"=/obj/item/weapon/stock_parts/capacitor/adv,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="Advanced scanner module is secured"),
+					 //6
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="Advanced scanner module is installed"),
+					 //7
+					 list("key"=/obj/item/weapon/stock_parts/scanning_module/adv,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="Targeting module is secured"),
+					 //8
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="Targeting module is installed"),
+					 //9
+					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/targeting,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="Peripherals control module is secured"),
+					 //10
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="Peripherals control module is installed"),
+					 //11
+					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/peripherals,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="Central control module is secured"),
+					 //12
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="Central control module is installed"),
+					 //13
+					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/main,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="The wiring is adjusted"),
+					 //14
+					 list("key"=/obj/item/weapon/wirecutters,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="The wiring is added"),
+					 //15
+					 list("key"=/obj/item/weapon/cable_coil,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="The hydraulic systems are active."),
+					 //16
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/wrench,
+					 		"desc"="The hydraulic systems are connected."),
+					 //17
+					 list("key"=/obj/item/weapon/wrench,
+					 		"desc"="The hydraulic systems are disconnected.")
+					)
+
+
+	action(atom/used_atom,mob/user as mob)
+		return check_step(used_atom,user)
+
+	custom_action(index, diff, atom/used_atom, mob/user)
+		if(!..())
+			return 0
+
+		//TODO: better messages.
+		switch(index)
+			if(17)
+				user.visible_message("[user] connects [holder] hydraulic systems", "You connect [holder] hydraulic systems.")
+				holder.icon_state = "durand1"
+			if(16)
+				if(diff==FORWARD)
+					user.visible_message("[user] activates [holder] hydraulic systems.", "You activate [holder] hydraulic systems.")
+					holder.icon_state = "turret12"
+				else
+					user.visible_message("[user] disconnects [holder] hydraulic systems", "You disconnect [holder] hydraulic systems.")
+					holder.icon_state = "turret10"
+			if(15)
+				if(diff==FORWARD)
+					user.visible_message("[user] adds the wiring to [holder].", "You add the wiring to [holder].")
+					holder.icon_state = "turret13"
+				else
+					user.visible_message("[user] deactivates [holder] hydraulic systems.", "You deactivate [holder] hydraulic systems.")
+					holder.icon_state = "turret11"
+			if(14)
+				if(diff==FORWARD)
+					user.visible_message("[user] adjusts the wiring of [holder].", "You adjust the wiring of [holder].")
+					holder.icon_state = "turret14"
+				else
+					user.visible_message("[user] removes the wiring from [holder].", "You remove the wiring from [holder].")
+					var/obj/item/weapon/cable_coil/coil = new /obj/item/weapon/cable_coil(get_turf(holder))
+					coil.amount = 4
+					holder.icon_state = "turret12"
+			if(13)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs the central control module into [holder].", "You install the central computer mainboard into [holder].")
+					del used_atom
+					holder.icon_state = "turret15"
+				else
+					user.visible_message("[user] disconnects the wiring of [holder].", "You disconnect the wiring of [holder].")
+					holder.icon_state = "turret13"
+			if(12)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures the mainboard.", "You secure the mainboard.")
+					holder.icon_state = "turret16"
+				else
+					user.visible_message("[user] removes the central control module from [holder].", "You remove the central computer mainboard from [holder].")
+					new /obj/item/weapon/circuitboard/mecha/turret1/main(get_turf(holder))
+					holder.icon_state = "turret14"
+			if(11)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs the peripherals control module into [holder].", "You install the peripherals control module into [holder].")
+					del used_atom
+					holder.icon_state = "turret17"
+				else
+					user.visible_message("[user] unfastens the mainboard.", "You unfasten the mainboard.")
+					holder.icon_state = "turret15"
+			if(10)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures the peripherals control module.", "You secure the peripherals control module.")
+					holder.icon_state = "turret18"
+				else
+					user.visible_message("[user] removes the peripherals control module from [holder].", "You remove the peripherals control module from [holder].")
+					new /obj/item/weapon/circuitboard/mecha/turret1/peripherals(get_turf(holder))
+					holder.icon_state = "turret16"
+			if(9)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs the weapon control module into [holder].", "You install the weapon control module into [holder].")
+					del used_atom
+					holder.icon_state = "turret19"
+				else
+					user.visible_message("[user] unfastens the peripherals control module.", "You unfasten the peripherals control module.")
+					holder.icon_state = "turret17"
+			if(8)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures the weapon control module.", "You secure the weapon control module.")
+					holder.icon_state = "turret110"
+				else
+					user.visible_message("[user] removes the weapon control module from [holder].", "You remove the weapon control module from [holder].")
+					new /obj/item/weapon/circuitboard/mecha/turret1/targeting(get_turf(holder))
+					holder.icon_state = "turret18"
+			if(7)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs advanced scanner module to [holder].", "You install advanced scanner module to [holder].")
+					del used_atom
+					holder.icon_state = "turret111"
+				else
+					user.visible_message("[user] unfastens the weapon control module.", "You unfasten the weapon control module.")
+					holder.icon_state = "turret19"
+			if(6)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures the advanced scanner module.", "You secure the advanced scanner module.")
+					holder.icon_state = "turret112"
+				else
+					user.visible_message("[user] removes the advanced scanner module from [holder].", "You remove the advanced scanner module from [holder].")
+					new /obj/item/weapon/stock_parts/scanning_module/adv(get_turf(holder))
+					holder.icon_state = "turret110"
+			if(5)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs advanced capacitor to [holder].", "You install advanced capacitor to [holder].")
+					del used_atom
+					holder.icon_state = "turret113"
+				else
+					user.visible_message("[user] unfastens the advanced scanner module.", "You unfasten the advanced scanner module.")
+					holder.icon_state = "turret111"
+			if(4)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures the advanced capacitor.", "You secure the advanced capacitor.")
+					holder.icon_state = "turret114"
+				else
+					user.visible_message("[user] removes the advanced capacitor from [holder].", "You remove the advanced capacitor from [holder].")
+					new /obj/item/weapon/stock_parts/capacitor/adv(get_turf(holder))
+					holder.icon_state = "turret112"
+			if(3)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs turret1 Armour Plates to [holder].", "You install turret1 Armour Plates to [holder].")
+					del used_atom
+					holder.icon_state = "turret115"
+				else
+					user.visible_message("[user] cuts internal armor layer from [holder].", "You cut the internal armor layer from [holder].")
+					holder.icon_state = "turret113"
+			if(2)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures turret1 Armour Plates.", "You secure turret1 Armour Plates.")
+					holder.icon_state = "turret116"
+				else
+					user.visible_message("[user] pries turret1 Armour Plates from [holder].", "You prie turret1 Armour Plates from [holder].")
+					new /obj/item/mecha_parts/part/turret1_armour(get_turf(holder))
+					holder.icon_state = "turret114"
+			if(1)
+				if(diff==FORWARD)
+					user.visible_message("[user] welds turret1 Armour Plates to [holder].", "You weld turret1 Armour Plates to [holder].")
+				else
+					user.visible_message("[user] unfastens turret1 Armour Plates.", "You unfasten turret1 Armour Plates.")
+					holder.icon_state = "turret115"
+		return 1
+
+	spawn_result()
+		..()
+		feedback_inc("mecha_turret1_created",1)
+		return
+
 
 
 /datum/construction/mecha/odysseus_chassis

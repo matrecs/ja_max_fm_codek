@@ -14,17 +14,19 @@
 	//operation_req_access = list()
 	internal_damage_threshold = 25
 	force = 15
-	max_equip = 2
+	max_equip = 4
 
-/obj/mecha/combat/turret1/New()
-	..()
-	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy
-	ME.attach(src)
-	ME.attach(src)
-	return
+// /obj/mecha/combat/turret1/New()
+// 	..()
+// 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy
+// 	ME.attach(src)
+// 	ME.attach(src)
+// 	return
 
 /obj/mecha/combat/turret1/Move()
+	user.visible_message("[user], you can't move")
 	return
 
 /obj/mecha/combat/turret1/dyndomove()
+	user.visible_message("[user], you can't move")
 	return

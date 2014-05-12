@@ -202,6 +202,18 @@
 /obj/effect/decal/mecha_wreckage/turret1
 	name = "turret1 wreckage"
 	icon_state = "turret1-broken"
+	New()
+		..()
+		var/list/parts = list(/obj/item/mecha_parts/part/turret1_torso,
+									/obj/item/mecha_parts/part/turret1_left_arm,
+									/obj/item/mecha_parts/part/turret1_right_arm,
+									/obj/item/clothing/suit/fire)
+		for(var/i=0;i<2;i++)
+			if(!isemptylist(parts) && prob(40))
+				var/part = pick(parts)
+				welder_salvage += part
+				parts -= part
+		return
 
 
 /obj/effect/decal/mecha_wreckage/odysseus

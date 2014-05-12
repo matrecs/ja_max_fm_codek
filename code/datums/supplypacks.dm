@@ -556,6 +556,16 @@ var/list/all_supply_groups = list("Operations","Security","Hospitality","Enginee
 	access = access_robotics
 	group = "Engineering"
 
+/datum/supply_packs/mecha_turret1
+	name = "Circuit Crate (\"Turret\" APLU)"
+	contains = list(/obj/item/weapon/circuitboard/mecha/turret1/main, //TEMPORARY due to lack of circuitboard printer
+					/obj/item/weapon/circuitboard/mecha/turret1/peripherals) //TEMPORARY due to lack of circuitboard printer
+	cost = 30
+	containertype = /obj/structure/closet/crate/secure
+	containername = "APLU \"Turret\" Circuit Crate"
+	access = access_robotics
+	group = "Engineering"
+
 /datum/supply_packs/mecha_odysseus
 	name = "Circuit Crate (\"Odysseus\")"
 	contains = list(/obj/item/weapon/circuitboard/mecha/odysseus/peripherals, //TEMPORARY due to lack of circuitboard printer
