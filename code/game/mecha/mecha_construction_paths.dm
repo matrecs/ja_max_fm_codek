@@ -1184,7 +1184,7 @@
 		var/obj/item/mecha_parts/chassis/const_holder = holder
 		const_holder.construct = new /datum/construction/reversible/mecha/turret1(const_holder)
 		const_holder.icon = 'icons/mecha/mech_construction.dmi'
-		const_holder.icon_state = "turret10"
+		const_holder.icon_state = "turret1_0"
 		const_holder.density = 1
 		spawn()
 			del src
@@ -1212,52 +1212,60 @@
 					 //5
 					 list("key"=/obj/item/weapon/stock_parts/capacitor/adv,
 					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Advanced scanner module is secured"),
+					 		"desc"="Advanced capacitor is secured"),
 					 //6
 					 list("key"=/obj/item/weapon/screwdriver,
 					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Advanced scanner module is installed"),
+					 		"desc"="Advanced capacitor is installed"),
 					 //7
-					 list("key"=/obj/item/weapon/stock_parts/scanning_module/adv,
+					 list("key"=/obj/item/weapon/stock_parts/capacitor/adv,
 					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Targeting module is secured"),
+					 		"desc"="Advanced scanner module is secured"),
 					 //8
 					 list("key"=/obj/item/weapon/screwdriver,
 					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Targeting module is installed"),
+					 		"desc"="Advanced scanner module is installed"),
 					 //9
-					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/targeting,
+					 list("key"=/obj/item/weapon/stock_parts/scanning_module/adv,
 					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Peripherals control module is secured"),
+					 		"desc"="Targeting module is secured"),
 					 //10
 					 list("key"=/obj/item/weapon/screwdriver,
 					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Peripherals control module is installed"),
+					 		"desc"="Targeting module is installed"),
 					 //11
-					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/peripherals,
+					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/targeting,
 					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Central control module is secured"),
+					 		"desc"="Peripherals control module is secured"),
 					 //12
 					 list("key"=/obj/item/weapon/screwdriver,
 					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Central control module is installed"),
+					 		"desc"="Peripherals control module is installed"),
 					 //13
+					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/peripherals,
+					 		"backkey"=/obj/item/weapon/screwdriver,
+					 		"desc"="Central control module is secured"),
+					 //14
+					 list("key"=/obj/item/weapon/screwdriver,
+					 		"backkey"=/obj/item/weapon/crowbar,
+					 		"desc"="Central control module is installed"),
+					 //15
 					 list("key"=/obj/item/weapon/circuitboard/mecha/turret1/main,
 					 		"backkey"=/obj/item/weapon/screwdriver,
 					 		"desc"="The wiring is adjusted"),
-					 //14
+					 //16
 					 list("key"=/obj/item/weapon/wirecutters,
 					 		"backkey"=/obj/item/weapon/screwdriver,
 					 		"desc"="The wiring is added"),
-					 //15
+					 //17
 					 list("key"=/obj/item/weapon/cable_coil,
 					 		"backkey"=/obj/item/weapon/screwdriver,
 					 		"desc"="The hydraulic systems are active."),
-					 //16
+					 //18
 					 list("key"=/obj/item/weapon/screwdriver,
 					 		"backkey"=/obj/item/weapon/wrench,
 					 		"desc"="The hydraulic systems are connected."),
-					 //17
+					 //19
 					 list("key"=/obj/item/weapon/wrench,
 					 		"desc"="The hydraulic systems are disconnected.")
 					)
@@ -1272,134 +1280,150 @@
 
 		//TODO: better messages.
 		switch(index)
-			if(17)
+			if(19)
 				user.visible_message("[user] connects [holder] hydraulic systems", "You connect [holder] hydraulic systems.")
 				holder.icon_state = "durand1"
-			if(16)
+			if(18)
 				if(diff==FORWARD)
 					user.visible_message("[user] activates [holder] hydraulic systems.", "You activate [holder] hydraulic systems.")
-					holder.icon_state = "turret12"
+					holder.icon_state = "turret1_2"
 				else
 					user.visible_message("[user] disconnects [holder] hydraulic systems", "You disconnect [holder] hydraulic systems.")
-					holder.icon_state = "turret10"
-			if(15)
+					holder.icon_state = "turret1_0"
+			if(17)
 				if(diff==FORWARD)
 					user.visible_message("[user] adds the wiring to [holder].", "You add the wiring to [holder].")
-					holder.icon_state = "turret13"
+					holder.icon_state = "turret1_3"
 				else
 					user.visible_message("[user] deactivates [holder] hydraulic systems.", "You deactivate [holder] hydraulic systems.")
-					holder.icon_state = "turret11"
-			if(14)
+					holder.icon_state = "turret1_1"
+			if(16)
 				if(diff==FORWARD)
 					user.visible_message("[user] adjusts the wiring of [holder].", "You adjust the wiring of [holder].")
-					holder.icon_state = "turret14"
+					holder.icon_state = "turret1_4"
 				else
 					user.visible_message("[user] removes the wiring from [holder].", "You remove the wiring from [holder].")
 					var/obj/item/weapon/cable_coil/coil = new /obj/item/weapon/cable_coil(get_turf(holder))
 					coil.amount = 4
-					holder.icon_state = "turret12"
-			if(13)
+					holder.icon_state = "turret1_2"
+			if(15)
 				if(diff==FORWARD)
 					user.visible_message("[user] installs the central control module into [holder].", "You install the central computer mainboard into [holder].")
 					del used_atom
-					holder.icon_state = "turret15"
+					holder.icon_state = "turret1_5"
 				else
 					user.visible_message("[user] disconnects the wiring of [holder].", "You disconnect the wiring of [holder].")
-					holder.icon_state = "turret13"
-			if(12)
+					holder.icon_state = "turret1_3"
+			if(14)
 				if(diff==FORWARD)
 					user.visible_message("[user] secures the mainboard.", "You secure the mainboard.")
-					holder.icon_state = "turret16"
+					holder.icon_state = "turret1_6"
 				else
 					user.visible_message("[user] removes the central control module from [holder].", "You remove the central computer mainboard from [holder].")
 					new /obj/item/weapon/circuitboard/mecha/turret1/main(get_turf(holder))
-					holder.icon_state = "turret14"
-			if(11)
+					holder.icon_state = "turret1_4"
+			if(13)
 				if(diff==FORWARD)
 					user.visible_message("[user] installs the peripherals control module into [holder].", "You install the peripherals control module into [holder].")
 					del used_atom
-					holder.icon_state = "turret17"
+					holder.icon_state = "turret1_7"
 				else
 					user.visible_message("[user] unfastens the mainboard.", "You unfasten the mainboard.")
-					holder.icon_state = "turret15"
-			if(10)
+					holder.icon_state = "turret1_5"
+			if(12)
 				if(diff==FORWARD)
 					user.visible_message("[user] secures the peripherals control module.", "You secure the peripherals control module.")
-					holder.icon_state = "turret18"
+					holder.icon_state = "turret1_8"
 				else
 					user.visible_message("[user] removes the peripherals control module from [holder].", "You remove the peripherals control module from [holder].")
 					new /obj/item/weapon/circuitboard/mecha/turret1/peripherals(get_turf(holder))
-					holder.icon_state = "turret16"
-			if(9)
+					holder.icon_state = "turret1_6"
+			if(11)
 				if(diff==FORWARD)
 					user.visible_message("[user] installs the weapon control module into [holder].", "You install the weapon control module into [holder].")
 					del used_atom
-					holder.icon_state = "turret19"
+					holder.icon_state = "turret1_9"
 				else
 					user.visible_message("[user] unfastens the peripherals control module.", "You unfasten the peripherals control module.")
-					holder.icon_state = "turret17"
-			if(8)
+					holder.icon_state = "turret1_7"
+			if(10)
 				if(diff==FORWARD)
 					user.visible_message("[user] secures the weapon control module.", "You secure the weapon control module.")
-					holder.icon_state = "turret110"
+					holder.icon_state = "turret1_10"
 				else
 					user.visible_message("[user] removes the weapon control module from [holder].", "You remove the weapon control module from [holder].")
 					new /obj/item/weapon/circuitboard/mecha/turret1/targeting(get_turf(holder))
-					holder.icon_state = "turret18"
-			if(7)
+					holder.icon_state = "turret1_8"
+			if(9)
 				if(diff==FORWARD)
 					user.visible_message("[user] installs advanced scanner module to [holder].", "You install advanced scanner module to [holder].")
 					del used_atom
-					holder.icon_state = "turret111"
+					holder.icon_state = "turret1_11"
 				else
 					user.visible_message("[user] unfastens the weapon control module.", "You unfasten the weapon control module.")
-					holder.icon_state = "turret19"
-			if(6)
+					holder.icon_state = "turret1_9"
+			if(8)
 				if(diff==FORWARD)
 					user.visible_message("[user] secures the advanced scanner module.", "You secure the advanced scanner module.")
-					holder.icon_state = "turret112"
+					holder.icon_state = "turret1_12"
 				else
 					user.visible_message("[user] removes the advanced scanner module from [holder].", "You remove the advanced scanner module from [holder].")
 					new /obj/item/weapon/stock_parts/scanning_module/adv(get_turf(holder))
-					holder.icon_state = "turret110"
+					holder.icon_state = "turret1_10"
+			if(7)
+				if(diff==FORWARD)
+					user.visible_message("[user] installs advanced capacitor to [holder].", "You install advanced capacitor to [holder].")
+					del used_atom
+					holder.icon_state = "turret1_13"
+				else
+					user.visible_message("[user] unfastens the advanced scanner module.", "You unfasten the advanced scanner module.")
+					holder.icon_state = "turret1_11"
+			if(6)
+				if(diff==FORWARD)
+					user.visible_message("[user] secures the advanced capacitor.", "You secure the advanced capacitor.")
+					holder.icon_state = "turret1_14"
+				else
+					user.visible_message("[user] removes the advanced capacitor from [holder].", "You remove the advanced capacitor from [holder].")
+					new /obj/item/weapon/stock_parts/capacitor/adv(get_turf(holder))
+					holder.icon_state = "turret1_12"
 			if(5)
 				if(diff==FORWARD)
 					user.visible_message("[user] installs advanced capacitor to [holder].", "You install advanced capacitor to [holder].")
 					del used_atom
-					holder.icon_state = "turret113"
+					holder.icon_state = "turret1_15"
 				else
 					user.visible_message("[user] unfastens the advanced scanner module.", "You unfasten the advanced scanner module.")
-					holder.icon_state = "turret111"
+					holder.icon_state = "turret1_13"
 			if(4)
 				if(diff==FORWARD)
 					user.visible_message("[user] secures the advanced capacitor.", "You secure the advanced capacitor.")
-					holder.icon_state = "turret114"
+					holder.icon_state = "turret1_16"
 				else
 					user.visible_message("[user] removes the advanced capacitor from [holder].", "You remove the advanced capacitor from [holder].")
 					new /obj/item/weapon/stock_parts/capacitor/adv(get_turf(holder))
-					holder.icon_state = "turret112"
+					holder.icon_state = "turret1_14"
 			if(3)
 				if(diff==FORWARD)
-					user.visible_message("[user] installs turret1 Armour Plates to [holder].", "You install turret1 Armour Plates to [holder].")
+					user.visible_message("[user] installs Turret Armour Plates to [holder].", "You install Turret Armour Plates to [holder].")
 					del used_atom
-					holder.icon_state = "turret115"
+					holder.icon_state = "turret1_17"
 				else
 					user.visible_message("[user] cuts internal armor layer from [holder].", "You cut the internal armor layer from [holder].")
-					holder.icon_state = "turret113"
+					holder.icon_state = "turret1_15"
 			if(2)
 				if(diff==FORWARD)
-					user.visible_message("[user] secures turret1 Armour Plates.", "You secure turret1 Armour Plates.")
-					holder.icon_state = "turret116"
+					user.visible_message("[user] secures Turret Armour Plates.", "You secure Turret Armour Plates.")
+					holder.icon_state = "turret1_18"
 				else
-					user.visible_message("[user] pries turret1 Armour Plates from [holder].", "You prie turret1 Armour Plates from [holder].")
+					user.visible_message("[user] pries Turret Armour Plates from [holder].", "You prie Turret Armour Plates from [holder].")
 					new /obj/item/mecha_parts/part/turret1_armour(get_turf(holder))
-					holder.icon_state = "turret114"
+					holder.icon_state = "turret1_16"
 			if(1)
 				if(diff==FORWARD)
-					user.visible_message("[user] welds turret1 Armour Plates to [holder].", "You weld turret1 Armour Plates to [holder].")
+					user.visible_message("[user] welds Turret Armour Plates to [holder].", "You weld Turret Armour Plates to [holder].")
 				else
-					user.visible_message("[user] unfastens turret1 Armour Plates.", "You unfasten turret1 Armour Plates.")
-					holder.icon_state = "turret115"
+					user.visible_message("[user] unfastens Turret Armour Plates.", "You unfasten Turret Armour Plates.")
+					holder.icon_state = "turret1_17"
 		return 1
 
 	spawn_result()

@@ -4,13 +4,13 @@
 	icon_state = "turret1"
 	initial_icon = "turret1"
 	melee_can_hit = 0
-	anchored = 0
-	health = 300
-	damage_absorption = list("brute"=0.7,"fire"=0.7,"bullet"=0.7,"laser"=0.7,"energy"=0.7,"bomb"=0.7)
+	health = 250
+	damage_absorption = list("brute"=0.85,"fire"=0.85,"bullet"=0.5,"laser"=0.5,"energy"=0.5,"bomb"=0.85)
 	max_temperature = 25000
 	wreckage = /obj/effect/decal/mecha_wreckage/turret1
 	add_req_access = 1
 	maint_access = 0
+	can_move = 0
 	//operation_req_access = list()
 	internal_damage_threshold = 25
 	force = 15
@@ -22,11 +22,3 @@
 // 	ME.attach(src)
 // 	ME.attach(src)
 // 	return
-
-/obj/mecha/combat/turret1/Move()
-	user.visible_message("[user], you can't move")
-	return
-
-/obj/mecha/combat/turret1/dyndomove()
-	user.visible_message("[user], you can't move")
-	return

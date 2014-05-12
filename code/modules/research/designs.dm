@@ -614,7 +614,7 @@ datum/design/turret1_main
 	name = "Circuit Design (APLU \"Turret\" Central Control module)"
 	desc = "Allows for the construction of a \"Turret\" Central Control module."
 	id = "turret1_main"
-	req_tech = list("programming" = 3)
+	req_tech = list("programming" = 4)
 	build_type = IMPRINTER
 	materials = list("$glass" = 2000, "sacid" = 20)
 	build_path = "/obj/item/weapon/circuitboard/mecha/turret1/main"
@@ -623,7 +623,7 @@ datum/design/turret1_peri
 	name = "Circuit Design (APLU \"Turret\" Peripherals Control module)"
 	desc = "Allows for the construction of a  \"Turret\" Peripheral Control module."
 	id = "turret1_peri"
-	req_tech = list("programming" = 3)
+	req_tech = list("programming" = 4)
 	build_type = IMPRINTER
 	materials = list("$glass" = 2000, "sacid" = 20)
 	build_path = "/obj/item/weapon/circuitboard/mecha/turret1/peripherals"
